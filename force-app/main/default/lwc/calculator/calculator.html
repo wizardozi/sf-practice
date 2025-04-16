@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title="Calculator">
+        <!-- Display -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input variant="label-hidden"  type="text" label="Display" value={displayValue}></lightning-input>
+        </div>
+
+        <!-- Button Grid -->
+        <div class="slds-m-around_medium">
+            <!-- First Row -->
+            <div class="slds-grid slds-grid_align-center">
+                <lightning-button variant="destructive-text" label="C" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="÷" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="×" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="+" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+            </div>
+
+            <!-- Second Row -->
+            <div class="slds-grid slds-grid_align-center">
+                <lightning-button variant="brand-outline" label="7" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="8" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="9" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="-" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+            </div>
+
+            <!-- Third Row -->
+            <div class="slds-grid slds-grid_align-center">
+                <lightning-button variant="brand-outline" label="4" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="5" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="6" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="success" label="=" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-smal"></lightning-button>
+            </div>
+
+            <!-- Fourth Row -->
+            <div class="slds-grid slds-grid_align-center">
+                <lightning-button variant="brand-outline" label="1" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="2" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="3" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="0" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+            </div>
+
+            <!-- Fifth Row -->
+            <div class="slds-grid slds-grid_align-center">
+                <lightning-button variant="brand-outline" label="." onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                <lightning-button variant="brand-outline" label="±" onclick={handleClick} class="slds-button slds-col slds-size_1-of-4 slds-m-horizontal_xx-small slds-m-vertical_xx-small"></lightning-button>
+                
+            </div>
+        </div>
+    </lightning-card>
+</template>

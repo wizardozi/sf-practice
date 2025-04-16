@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="User Greeting">
+        <div class="slds-p-around_medium">
+            <lightning-input 
+                label="Enter Your Name"
+                value={userName} 
+                onchange={handleInputChange}>
+            </lightning-input>
+
+            <template if:true={userName}>
+                <p class="slds-m-top_medium">👋 Hello, {userName}!</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

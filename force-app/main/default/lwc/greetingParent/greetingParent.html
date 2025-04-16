@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title = "Greeting Parent">
+        <div class="slds-p-around_medium">
+            <!-- Input for the user's name -->
+            <lightning-input label="Enter Name" onchange={handleInputChange}></lightning-input>
+            
+            <!-- Child component receiving the name -->
+            <c-greeting-child received-name={userName}></c-greeting-child>
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Toggle Message">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Toggle" onclick={handleToggle}></lightning-button>
+
+            <template if:true={isVisible}>
+                <p class="slds-m-top_medium">🚀 This is a toggled message!</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

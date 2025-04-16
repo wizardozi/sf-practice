@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Palindrome Checker">
+        <lightning-input
+            label="Check if a palindrome"
+            value={palindrome}
+            onchange={handleChange}>
+        </lightning-input>
+        
+        <lightning-button 
+            label="Check"
+            variant="brand"
+            onclick={handleClick}>
+        </lightning-button>
+        <template if:true={error}>
+            <p class="slds-text-color_error">Error: {error}</p>
+        </template>                          
+        <p>Result: {result}</p>                         
+    </lightning-card>    
+</template>

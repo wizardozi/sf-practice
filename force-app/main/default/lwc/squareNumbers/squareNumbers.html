@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <h1>Square Numbers</h1>
+        <lightning-input label="Enter a number" type="number" value={inputNumber} onchange={handleInputChange}></lightning-input>
+        <lightning-button label="Calculate Square" onclick={handleButtonClick}></lightning-button>
+        <template if:true={result}>
+            <p>The square of {inputNumber} is {result}</p>
+        </template>
+    </div>
+</template>

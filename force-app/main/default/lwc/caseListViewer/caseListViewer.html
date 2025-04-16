@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Open Cases">
+        <div class="slds-p-around_medium">
+            <template if:true={cases}>
+                <template for:each={cases} for:item="caseItem">
+                    <p key={caseItem.Id}>
+                        <strong>{caseItem.CaseNumber}</strong>: {caseItem.Subject} - <em>{caseItem.Status}</em>
+                    </p>
+                </template>
+            </template>
+
+            <template if:false={cases}>
+                <p>No open cases found.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

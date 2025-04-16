@@ -1,0 +1,18 @@
+.lightning-card {
+    background-color: #1b1b2f;
+    color: #e43f5a;
+    border-radius: 10px;
+}
+
+.lightning-card h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px #e43f5a, 0 0 10px #e43f5a;
+}
+
+.lightning-datatable {
+    border: 1px solid #e43f5a;
+}
+
+p {
+    color: #e43f5a;
+}

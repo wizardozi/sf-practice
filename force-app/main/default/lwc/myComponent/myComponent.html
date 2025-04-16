@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Contact List" icon-name="standard:contact">
+        <template if:true={contacts}>
+            <lightning-datatable 
+                key-field="Id"
+                data={contacts}
+                columns={columns}>
+            </lightning-datatable>
+        </template>
+        <template if:false={contacts}>
+            <p>No contacts found.</p>
+        </template>
+    </lightning-card>
+</template>

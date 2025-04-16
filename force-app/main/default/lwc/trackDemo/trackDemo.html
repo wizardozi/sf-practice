@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Track Demo">
+        <div class="slds-p-around_medium">
+            <p>Item List:</p>
+            <template for:each={items} for:item="item">
+                <p key={item.id}>{item.name}</p>
+            </template>
+            <lightning-button label="Add Item (With Track)" onclick={addItemWithTrack}></lightning-button>
+            <lightning-button label="Add Item (Without Track)" onclick={addItemWithoutTrack}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

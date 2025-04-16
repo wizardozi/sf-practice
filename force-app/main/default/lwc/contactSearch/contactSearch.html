@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Contact Search">
+        <lightning-input 
+            label="Search Contacts by First Name"
+            value={firstName}
+            onchange={handleFirstNameChange}>            
+        </lightning-input>
+        
+        <lightning-input 
+            label="Search Contacts by Last Name"
+            value={lastName}
+            onchange={handleLastNameChange}>            
+        </lightning-input>
+        
+        <lightning-button 
+            label="Search"
+            variant="brand"
+            onclick={handleSearch}>            
+        </lightning-button>
+
+        <template if:true={error}>
+            <p class="slds-text-color_error">Error: {error}</p>
+        </template>
+
+        <template if:true={contacts}>
+            <ul>
+                <template for:each={contacts} for:item="contact">
+                    <li key={contact.Id}>
+                        {contact.FirstName} {contact.LastName} - {contact.Email}
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:true={noResults}>
+            <p>No contacts found.</p>
+        </template>
+    </lightning-card>
+</template>
